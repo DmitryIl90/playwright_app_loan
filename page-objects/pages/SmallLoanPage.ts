@@ -68,7 +68,7 @@ export class SmallLoanPage {
         expect(expected).toEqual(sum);
     }
 
-    async checkErrorMessageOoops(): Promise<void> {
+    async checkErrorMessage(): Promise<void> {
         await expect(this.errorMessage).toContainText("Oops, something went wrong");
     }
 
